@@ -8,7 +8,7 @@ Hi, I'm Justin.
 
 Welcome to my website.
 
-I am a Fire Sprinkler Surveyor by day, and a student by night.
+I'm currently a Fire Sprinkler Surveyor by day, and a student by night.
 
 I am slated to graduate this fall with an MS in Computer Science (with a concentration in Machine Learning) at George Mason University.
 
@@ -31,7 +31,7 @@ It was built with `python` and `beautifulsoup4`.
 is an unoffical [IMDb](https://imdb.com) API for the crowd-sourced parental guide found buried in the website.
 I use this to help avoid watching lewd or overly violent films with my family.
 It was built with `python` and `beautifulsoup4`.
-It also includes a web interface built with `Flask` and `Bootstrap5`
+It also includes a web interface built with `Flask` and `Bootstrap5`.
 
 **[dotcom](https://github.com/shinjustin/dotcom)**
 is simply the source files for this website.
