@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Justin Shin's Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+html, body {
+    height: 100%;
+}
+body {
+    background-color: #282828;
+    color: #ebdbbd;
+    margin: 0em auto;
+    max-width: 40em;
+    padding: 0 .62em;
+    display: flex;
+    flex-direction: column;
+}
+header, footer {
+    text-align: center;
+    padding: .62em 0;
+}
+footer {
+    flex-shrink: 0;
+}
+article {
+    flex: 1 0 auto;
+}
+h1,h2,h3 {
+    line-height: 1.2;
+    color: #d65e03;
+}
+a {
+    color: #458588
+}
+code {
+    background-color: #3c3836;
+}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Justin Shin's Website</h1>
+        </header>
+        <article>
+            <h2>About</h2>
+            <p>Hi, I'm Justin.</p>
+            <p>Welcome to my website.</p>
+            <p>I am a Fire Sprinkler Surveyor by day, and a student by night.</p>
+            <p>I am slated to graduate this fall with an MS in Computer Science (with a concentration in Machine Learning) at George Mason University.</p>
+            <p>In my free time, I like to work on my side projects.</p>
+            <p>I mostly write in <code>python</code>, but I am familiar with other imperative and OOP languages like <code>c</code>, <code>c++</code>,  and <code>java</code> and functional languages like <code>lisp</code> and <code>haskell</code> as well.</p>
+            <p>Because I like creating web scrapers, my favorite <code>python</code> libraries are <code>requests</code>, <code>beautifulsoup4</code>, and <code>selenium</code> and I use them often as you'll see below.</p>
+            <p>I also like creating web applications with <code>Flask</code> and <code>django</code> too.</p>
+            <h2>Projects</h2>
+            <p><strong><a href="https://github.com/shinjustin/daum_tv_api">daum_tv_api</a></strong>
+            is an unofficial <a href="https://daum.net">daum.net</a> API for TV show metadata.
+            <a href="https://daum.net">daum.net</a> is a Korean search engine that provides lots of useful TV show metadata like song titles of music that played during an episode or its Nielson ratings.
+            It was built with <code>python</code> and <code>beautifulsoup4</code>.</p>
+            <p><a href="https://github.com/shinjustin/islewdmovie"><strong>islewdmovie</strong></a>
+            is an unoffical <a href="https://imdb.com">IMDb</a> API for the crowd-sourced parental guide found buried in the website.
+            I use this to help avoid watching lewd or overly violent films with my family.
+            It was built with <code>python</code> and <code>beautifulsoup4</code>.
+            It also includes a web interface built with <code>Flask</code> and <code>Bootstrap5</code></p>
+            <p><strong><a href="https://github.com/shinjustin/dotcom">dotcom</a></strong>
+            is simply the source files for this website.
+            The HTML was generated with a markdown parser called <code>marko</code>.
+            This will eventually be a working static-site generator, but for now it's just a janky <code>html</code> repo.
+            If you find a typo, don't hesitate to send me a pull request or drop me an <a href="emailto:aloha@shinjustin.com">email</a>.</p>
+        </article>
+        <footer>
+            <hr>
+            <nav>
+                Connect: 
+                <a href="emailto:aloha@shinjustin.com">Email</a>
+                <a href="https://github.com/shinjustin">GitHub</a>
+            </nav>
+            <div>&copy; 2020-2022 <a href="/">shinjustin.com</a></div>
+        </footer>
+    </body>
+</html>
