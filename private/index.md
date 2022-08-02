@@ -37,4 +37,4 @@ It also includes a web interface built with `Flask` and `Bootstrap5`
 is simply the source files for this website.
 The HTML was generated with a markdown parser called `marko`.
 This will eventually be a working static-site generator, but for now it's just a janky `html` repo.
-If you find a typo, don't hesitate to send me a pull request or drop me an [email](emailto:aloha@shinjustin.com).
+If you find a typo, don't hesitate to send me a pull request or drop me an [email](mailto:aloha@shinjustin.com).
