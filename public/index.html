@@ -3,10 +3,10 @@
     <head>
         <title>Justin Shin's Website</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png">
+        <link rel="manifest" href="static/site.webmanifest">
         <style>
 html, body {
     height: 100%;
@@ -52,19 +52,23 @@ code {
             <h1>Justin Shin's Website</h1>
         </header>
         <article>
-            <img src="portrait.png" class="portrait">
+            <img src="static/portrait.png" class="portrait">
             <h2>About</h2>
             <p>Hi, I'm Justin.</p>
             <p>Welcome to my website.</p>
-            <p>I'm currently a Fire Sprinkler Surveyor by day, and a student by night.</p>
+            <p>I'm currently a Fire Sprinkler Surveyor by day, and a graduate student by night.</p>
             <p>I am slated to graduate this fall with an MS in Computer Science (with a concentration in Machine Learning) at George Mason University.</p>
             <p>In my free time, I like to work on my side projects.</p>
             <p>I mostly write in <code>python</code>, but I am familiar with other imperative and OOP languages like <code>c</code>, <code>c++</code>,  and <code>java</code> and functional languages like <code>lisp</code> and <code>haskell</code> as well.</p>
-            <p>Because I like creating web scrapers, my favorite <code>python</code> libraries are <code>requests</code>, <code>beautifulsoup4</code>, and <code>selenium</code> and I use them often as you'll see below.</p>
+            <p>My favorite <code>python</code> package is <code>beautifulsoup4</code> since I like to build web scrapers, as you will see below.</p>
             <p>I also like creating web applications with <code>Flask</code> and <code>django</code> too.</p>
             <h2>Projects</h2>
-            <p><strong><a href="https://github.com/shinjustin/daum_tv_api">daum_tv_api</a></strong>
-            is an unofficial <a href="https://daum.net">daum.net</a> API for Korean TV show metadata.
+            <p><a href="https://github.com/shinjustin/ladio"><strong>ladio</strong></a>
+            is a K-Pop music chart aggregator that combines the top 100 songs of major K-Pop music charts.
+            The scrapers were built using <code>python</code> and <code>beautifulsoup4</code>.
+            The fuzzy song title matching uses <code>fuzzywuzzy</code>.</p>
+            <p><a href="https://github.com/shinjustin/daum-tv-api"><strong>daum-tv-api</strong></a>
+            is an unofficial <a href="https://www.daum.net">daum.net</a> API for Korean TV show metadata.
             It can be used to pull interesting data like song titles of music that played during an episode or its Nielson ratings.
             It was built with <code>python</code> and <code>beautifulsoup4</code>.</p>
             <p><a href="https://github.com/shinjustin/islewdmovie"><strong>islewdmovie</strong></a>
@@ -72,7 +76,7 @@ code {
             I use this to help avoid watching lewd or overly violent films with my family.
             It was built with <code>python</code> and <code>beautifulsoup4</code>.
             It also includes a web interface built with <code>Flask</code> and <code>Bootstrap5</code>.</p>
-            <p><strong><a href="https://github.com/shinjustin/dotcom">dotcom</a></strong>
+            <p><a href="https://github.com/shinjustin/dotcom"><strong>dotcom</strong></a>
             is simply the source files for this website.
             The HTML was generated with a markdown parser called <code>marko</code>.
             This will eventually be a working static-site generator, but for now it's just a janky <code>html</code> repo.
