@@ -1,0 +1,17 @@
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        |
+        <a href="tech.html">Tech</a>
+        <a href="faves.html">Faves</a>
+        |
+        <a href="now.html">Now</a>
+    </nav>
+    <h1>
+        {% if post.title == 'Index' %}
+        Justin Shin's Website
+        {% else %}
+        {{ post.title }}
+        {% endif %}
+    </h1>
+</header>
