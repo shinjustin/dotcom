@@ -2,19 +2,15 @@
 date: 2022-08-02
 ---
 
-## About
-
-Hi, I'm Justin.
-
 Welcome to my website.
 
-I'm currently a Fire Sprinkler Surveyor by day, and a graduate student by night.
+I'm currently a Fire Sprinkler Surveyor by day, and a CS graduate student by night.
 
-I am slated to graduate this fall with an MS in Computer Science (with a concentration in Machine Learning) at George Mason University.
+I am slated to graduate this fall with an MS in Computer Science (Machine Learning Concentration) at George Mason University.
 
 In my free time, I like to work on my side projects.
 
-I mostly like to write in `python` but I am also familiar with other languages like `c`, `c++`, `java`, and `JavaScript`.
+I mostly like to write in `python` but I am also familiar with `c`, `c++`, `java`, and `JavaScript`.
 
 I think functional programming is really cool so I have some experience in `haskell` and `lisp`.
 
