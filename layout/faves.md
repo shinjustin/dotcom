@@ -2,7 +2,7 @@
 date: 2022-06-30
 ---
 
-Here are some things that I liked:
+Here are some things that I have enjoyed:
 
 ## Books
 ### Philosophy
