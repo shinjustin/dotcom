@@ -1,0 +1,37 @@
+{{define "layout"}}<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{if eq .Slug "home"}}Shin, Justin's Website{{else}}{{.Title}} — Shin, Justin{{end}}</title>
+  {{if .Subtitle}}<meta name="description" content="{{.Subtitle}}">{{end}}
+  <link rel="stylesheet" href="/site.css">
+</head>
+<body>
+
+  <header>
+    <div class="inner">
+      <a class="wordmark" href="/">Shin, Justin</a>
+      <nav>
+        <a href="/" {{if eq .Slug "home"}}class="active"{{end}}>Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{template "page" .}}
+  </main>
+
+  <footer>
+    <div class="inner">
+      <span class="copy">&copy; 2015 &ndash; 2026 Shin, Justin</span>
+      <nav>
+        <a href="/privacy" {{if eq .Slug "privacy"}}class="active"{{end}}>Privacy</a>
+        <a href="/terms" {{if eq .Slug "terms"}}class="active"{{end}}>Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
+{{end}}

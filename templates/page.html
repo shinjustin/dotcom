@@ -1,0 +1,16 @@
+{{define "page"}}
+<div class="page-header">
+  <h1>{{.Title}}</h1>
+  {{if .Subtitle}}<p class="subtitle">{{.Subtitle}}</p>{{end}}
+</div>
+{{if .TOC}}{{.TOC}}{{end}}
+<div class="prose">
+  {{.Content}}
+</div>
+{{if or .CreatedAt .UpdatedAt}}
+<div class="page-meta">
+  {{if .CreatedAt}}<span>Created: {{.CreatedAt}}</span>{{end}}
+  {{if .UpdatedAt}}<span>Updated: {{.UpdatedAt}}</span>{{end}}
+</div>
+{{end}}
+{{end}}
