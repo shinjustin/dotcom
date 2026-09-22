@@ -43,6 +43,7 @@ var requiredPages = []struct {
     {"home.md", "index.html"},
     {"privacy.md", filepath.Join("privacy", "index.html")},
     {"terms.md", filepath.Join("terms", "index.html")},
+    {"colophon.md", filepath.Join("colophon", "index.html")},
 }
 
 func Run(cfg Config) error {
