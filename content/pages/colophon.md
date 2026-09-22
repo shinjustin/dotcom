@@ -33,6 +33,15 @@ The color palette is dark green because I like it.
 The site is hosted on a small VPS.
 DNS points directly to the server, and Caddy manages TLS certificates through Let's Encrypt.
 
+## Deployment
+
+Deployments are automated with GitHub Actions.
+When changes are pushed to the `main` branch, GitHub connects to the VPS over SSH as a dedicated user.
+The server pulls the latest code and rebuilds the site with Docker Compose.
+
+The production environment file stays on the VPS and is not committed to the repository.
+SSH credentials are stored as encrypted GitHub Actions secrets.
+
 ## Source
 
 The source code for this site lives on GitHub:
