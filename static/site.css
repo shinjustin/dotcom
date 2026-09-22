@@ -107,6 +107,29 @@ main {
   width: 100%;
 }
 
+main.not-found-main {
+  max-width: none;
+  display: grid;
+  place-items: center;
+  padding: var(--spacing);
+}
+
+.not-found {
+  text-align: center;
+}
+
+.not-found-image {
+  display: block;
+  width: min(70vw, 360px);
+  height: auto;
+  margin: 0 auto 1.25rem;
+}
+
+.not-found-caption {
+  color: var(--color-heading);
+  font-size: 1rem;
+}
+
 /* ── Prose ── */
 .page-header {
   margin-bottom: 2.5rem;

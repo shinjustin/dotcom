@@ -47,6 +47,7 @@ func Run(cfg Config) error {
     tmpl, err := template.ParseFiles(
         filepath.Join(cfg.TemplateDir, "layout.html"),
         filepath.Join(cfg.TemplateDir, "page.html"),
+        filepath.Join(cfg.TemplateDir, "not-found.html"),
     )
     if err != nil {
         return fmt.Errorf("parse templates: %w", err)
@@ -80,6 +81,16 @@ func Run(cfg Config) error {
 
         fmt.Printf("  wrote %s\n", outPath)
     }
+
+    notFound := Page{
+        Title: "Page Not Found",
+        Slug:  "404",
+    }
+    notFoundPath := filepath.Join(cfg.OutputDir, "404.html")
+    if err := writeHTML(tmpl, notFound, notFoundPath); err != nil {
+        return fmt.Errorf("write %q: %w", notFoundPath, err)
+    }
+    fmt.Printf("  wrote %s\n", notFoundPath)
 
     if err := copyStatic(cfg.StaticDir, cfg.OutputDir); err != nil {
         return fmt.Errorf("copy static: %w", err)

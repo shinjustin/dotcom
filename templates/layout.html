@@ -18,8 +18,8 @@
     </div>
   </header>
 
-  <main>
-    {{template "page" .}}
+  <main {{if eq .Slug "404"}}class="not-found-main"{{end}}>
+    {{if eq .Slug "404"}}{{template "not-found" .}}{{else}}{{template "page" .}}{{end}}
   </main>
 
   <footer>
