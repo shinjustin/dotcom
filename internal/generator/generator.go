@@ -8,6 +8,7 @@ import (
     "os/exec"
     "path/filepath"
     "strings"
+    "time"
 
     "github.com/yuin/goldmark"
     "github.com/yuin/goldmark/ast"
@@ -22,8 +23,9 @@ type Page struct {
     Slug      string
     TOC       template.HTML
     Content   template.HTML
-    CreatedAt string
-    UpdatedAt string
+    CreatedAt   string
+    UpdatedAt   string
+    CurrentYear int
 }
 
 type Config struct {
@@ -73,6 +75,7 @@ func Run(cfg Config) error {
         }
 
         page.CreatedAt, page.UpdatedAt = gitDates(srcPath)
+        page.CurrentYear = time.Now().Year()
 
         outPath := filepath.Join(cfg.OutputDir, rp.outPath)
         if err := writeHTML(tmpl, page, outPath); err != nil {
@@ -83,8 +86,9 @@ func Run(cfg Config) error {
     }
 
     notFound := Page{
-        Title: "Page Not Found",
-        Slug:  "404",
+        Title:       "Page Not Found",
+        Slug:        "404",
+        CurrentYear: time.Now().Year(),
     }
     notFoundPath := filepath.Join(cfg.OutputDir, "404.html")
     if err := writeHTML(tmpl, notFound, notFoundPath); err != nil {
