@@ -11,7 +11,7 @@ This is my personal website. I write stuff, you read it. That's the deal.
 Pretty simple, right?
 
 ## 2. My Content
-Everything you see here — words, code snippets, opinions — belongs to me unless I say otherwise.
+Everything you see here (like code snippets, opinions), belongs to me unless I say otherwise.
 Please don't copy and republish it without asking first. A quick email goes a long way!
 
 ## 3. No Warranties
@@ -20,7 +20,7 @@ Don't make life-changing decisions based solely on what you read here.
 
 ## 4. External Links
 Sometimes I link to other sites because they're useful or interesting.
-Once you click away, you're in their territory — their rules apply, not mine.
+Once you click away, you're in their territory; their rules apply, not mine.
 
 ## 5. Changes to these Terms
 I might update these terms from time to time.
